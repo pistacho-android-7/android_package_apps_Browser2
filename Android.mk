@@ -1,3 +1,4 @@
+ifeq ($(HAVE_FSL_IMX_GPU3D),true)
 LOCAL_PATH:= $(call my-dir)
 include $(CLEAR_VARS)
 
@@ -11,3 +12,4 @@ LOCAL_SRC_FILES := \
 LOCAL_PACKAGE_NAME := Browser2
 
 include $(BUILD_PACKAGE)
+endif
